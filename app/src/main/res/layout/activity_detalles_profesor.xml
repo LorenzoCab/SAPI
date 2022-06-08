@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetallesProfesorActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="399dp"
+        android:layout_height="483dp"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="true"
+            android:fadingEdgeLength="50dp"
+
+            android:requiresFadingEdge="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/tv_tituloproyecto_pr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Título: Sistema Administrador de Proyectos Integradores"
+                    android:textColor="@color/purple_700"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_inst_pr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Institución: Instituto Tecnológico de CIudad Madero" />
+
+                <TextView
+                    android:id="@+id/tv_coord_pr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Coordinador: M.C Martha Chuey" />
+
+                <TextView
+                    android:id="@+id/tv_colab_pr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Colaborador(es): Profra. Rosa Delia Retiz Rivera" />
+
+                <TextView
+                    android:id="@+id/tv_cliente_pr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Departamentos:"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_dep_pr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="      Sistemas Computacionales: ISIC-2010-224" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Asignaturas:"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_asign_pr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="      Nombre: Gestión de Proyectos de Software" />
+
+                <TextView
+                    android:id="@+id/tv_sem_pr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Semestre: 8" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    app:contentPaddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Competencias a desarrollar:"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_compdes_pr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Aplica metodologías e instrumentos, para garantizar la gestión adecuada de un proyecto de software." />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="99dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView44"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Competencias previas:"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_compprev_pr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Desarrolla soluciones de software, considerando la metodología y herramientas para la elaboración de un proyecto aplicativo en diferentes escenarios." />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="118dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView46"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Etapa 1:"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_et1_pr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Cronograma" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="104dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView48"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Etapa 2:"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_et2_pr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Protocolo" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView50"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Etapa 3"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_et3_pr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Documentacion" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_areacon_pr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Area de conocimiento: Dispositivos Moviles" />
+
+                            <TextView
+                                android:id="@+id/tv_tipoejec_pr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tipo de ejecución: Asignatura (estructura genérica)" />
+
+                            <TextView
+                                android:id="@+id/tv_tipopr_pr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tipo de Proyecto: Resolutivo" />
+
+                            <TextView
+                                android:id="@+id/tv_mateje_pr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Materia Eje: Gestión de Proyectos de Software" />
+
+                            <TextView
+                                android:id="@+id/tv_impacto_pr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Impacto: " />
+
+                            <TextView
+                                android:id="@+id/tv_justificacion_pr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:text="Justificacion: " />
+
+                            <TextView
+                                android:id="@+id/tv_limres_pr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:text="Limites y restricciones: Una aplicación móvil con acceso web" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/btn_modificar"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:paddingRight="20dp"
+            android:text="Modificar" />
+
+        <Button
+            android:id="@+id/btn_eliminar"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="20dp"
+            android:text="Eliminar" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NuevoProyectoActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="388dp"
+        android:layout_height="472dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="20dp"
+        android:paddingRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:id="@+id/tv_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:text="Por favor introduzca la información en los campos necesarios:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.986" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="true"
+            android:fadingEdgeLength="50dp"
+            android:requiresFadingEdge="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_institucion_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+
+                    android:text="Institución (Dividir con / en caso de ser multiples):" />
+
+                <EditText
+                    android:id="@+id/et_institucion_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/tv_departamentos_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+
+                    android:text="Departamento: " />
+
+                <EditText
+                    android:id="@+id/et_departamentos_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tv_titulo_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+
+                    android:text="Título del Proyecto Integrador:" />
+
+                <EditText
+                    android:id="@+id/et_titulo_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tv_cliente_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+
+                    android:text="Cliente" />
+
+                <EditText
+                    android:id="@+id/et_cliente_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tv_materiaeje_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+
+                    android:text="Materia eje:" />
+
+                <EditText
+                    android:id="@+id/et_materiaeje_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tv_areaconoc_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+
+                    android:text="Areas de conocimiento (Separar con /):" />
+
+                <EditText
+                    android:id="@+id/et_areaconoc_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tv_profresponsables_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+
+                    android:text="Profesores responsables: (Separar con / )" />
+
+                <EditText
+                    android:id="@+id/et_profresponsables_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text|textMultiLine" />
+                <TextView
+                    android:id="@+id/tv_coordinador_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Coordinador del proyecto integrador:" />
+
+                <EditText
+                    android:id="@+id/et_coordinador_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tv_alumnos_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Alumno:" />
+
+
+                <EditText
+                    android:id="@+id/et_alumnos_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tv_alumnonc_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="N. control del alumno:" />
+
+
+                <EditText
+                    android:id="@+id/et_alumnonc_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/tv_colaboradores_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Colaborador(es) : (Separar con / )" />
+
+                <EditText
+                    android:id="@+id/et_colaboradores_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text|textMultiLine" />
+
+                <TextView
+                    android:id="@+id/tv_planesestudio_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Plan(es) de Estudio: (Separar con / )" />
+
+                <EditText
+                    android:id="@+id/et_planesestudio_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text|textMultiLine" />
+
+                <TextView
+                    android:id="@+id/tv_periodo_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Periodo. (dd/mm/yyyy)"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_fechainicio_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Fecha de Inicio:"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/et_fechainicio_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="date" />
+
+                <TextView
+                    android:id="@+id/tv_fechafin_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Fecha de Fin:"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/et_fechafin_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="date" />
+
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Caracterización del proyecto."
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/tv_ejecuciones_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Tipo de ejecución:" />
+
+                <EditText
+                    android:id="@+id/et_ejecuciones_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tv_tipoproy_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo de proyecto:" />
+
+                <EditText
+                    android:id="@+id/et_tipoproy_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+
+                <TextView
+                    android:id="@+id/tv_plantemiento_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Planteamiento del proyecto:" />
+
+                <EditText
+                    android:id="@+id/et_planteamiento_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:ems="10"
+                    android:inputType="text|textMultiLine" />
+
+                <TextView
+                    android:id="@+id/tv_alcances_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alcance del proyecto:" />
+
+                <EditText
+                    android:id="@+id/et_alcances_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:ems="10"
+                    android:inputType="text|textMultiLine" />
+
+                <TextView
+                    android:id="@+id/tv_justificacion_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Justificación:" />
+
+                <EditText
+                    android:id="@+id/et_justificacion_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:ems="10"
+                    android:inputType="text|textMultiLine" />
+
+                <TextView
+                    android:id="@+id/tv_limitaciones_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Limitaciones:" />
+
+                <EditText
+                    android:id="@+id/et_limitaciones_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:ems="10"
+                    android:inputType="text|textMultiLine" />
+**
+                <TextView
+                    android:id="@+id/tv_impacto_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Impacto:" />
+
+                <EditText
+                    android:id="@+id/et_impacto_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:ems="10"
+                    android:inputType="text|textMultiLine" />
+
+
+
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Competencias."
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_asignatura_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Asignaturas: (Separar con / )" />
+
+                <EditText
+                    android:id="@+id/et_asignaturas_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tv_compPrev_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Competencias Previas: (Separar con / )"  />
+
+                <EditText
+                    android:id="@+id/et_compPrev_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tv_compDes_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Competencias a Desarrollar: (Separar con / )" />
+
+                <EditText
+                    android:id="@+id/et_compDes_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_nuevoproyecto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.121" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
